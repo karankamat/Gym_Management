@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Demo_Project.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Fitness</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="JavaScripts/Menu_Pop.js"></script>
+	<link href="Style%20Sheets/web1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+ 
+    <header id="header">
+    <h1 style="font-size:55px">Fitness Empire</h1>
+    </header>
+			<div class="navbar">
+				<a class="active" href="WebForm1.aspx"><i class="fa fa-home"></i></a> 
+				<div id="myLinks">
+					  <div class="subnav">
+						<button class="subnavbtn">Member</button>
+							<div class="subnav-content">
+							 	<a href="Member.aspx">Add</a>
+							 	<a href="#"><i class="fa fa-fw fa-user"></i>Details</a>
+							  	<a href="#"><i class="fa fa-trash">Remove</i></a>
+							</div>
+					  </div>
+					  <div class="subnav">
+						<button class="subnavbtn">Employee</button>
+							<div class="subnav-content">
+								<a href="Employee.aspx">Add</a>
+								<a href="#"><i class="fa fa-fw fa-user"></i>Details</a>
+								<a href="#"><i class="fa fa-trash"></i>Remove</a>
+							</div>
+					  </div> 
+					  <div class="subnav">
+						<button class="subnavbtn">Classes</button>
+							<div class="subnav-content">
+								<a href="#">Add</a>
+								<a href="#">Details</a>
+								<a href="#"><i class="fa fa-trash"></i>Remove</a>
+							</div>
+					  </div>
+					  <a href="#contact">Contact</a>
+				
+					  <a href="Login_1.aspx"><i class="fa fa-fw fa-user"></i>Logout</a>
+				</div>	
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			</div>
+
+        <div id="main">
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">  
+				
+				<p>
+					<br />
+				</p>
+				<p>
+				</p>
+				<p>
+				</p>
+				<p>
+				</p>
+				<p>
+				</p>
+				<p>
+				</p>
+				<p>
+				</p>
+				<p>
+				</p>
+				<p>
+				</p>
+				<p>
+				</p>
+				
+			</asp:ContentPlaceHolder>  
+        </div>
+
+    <div id="footer">
+        @copyright Fitness Empire
+    </div>
+
+    
+       
+    
+</body>
+</html>
