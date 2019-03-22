@@ -1,5 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Raleway');
-
+*{
+    border-radius:20px;
+}
 body {
     margin: 0;
     padding: 0;
@@ -8,15 +10,16 @@ body {
 }
 
 #container-login {
-    background-color: #1D1F20;
+    background-color: #373b3d;
     position: relative;
-    top: 20%;
+    top: 18%;
     margin: auto;
     width: 340px;
     height: 445px;
     border-radius: 0.35em;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
+    left: 22px;
 }
 
 
@@ -37,7 +40,7 @@ body {
 
 .input {
     border-radius: 4px;
-    background-color: #373b3d;
+    background-color: #C1C3C6;
     padding: 8px 0px;
     margin-top: 15px;
     margin-left: auto;

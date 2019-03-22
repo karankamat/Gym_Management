@@ -20,7 +20,7 @@ namespace Demo_Project
             
                 if (tb1.Text.ToString() == "Karan" && tb2.Text.ToString() == "12345678")
                 {
-                    Response.Redirect("~/WebForm1.aspx");
+                    Response.Redirect("~/Fitness_Empire.aspx");
                 }
                 else
                 {

@@ -7,7 +7,7 @@
     <title>Fitness</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="JavaScripts/Menu_Pop.js"></script>
-	<link href="Style%20Sheets/web1.css" rel="stylesheet" />
+	<link href="Style%20Sheets/Master_Page.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -18,68 +18,54 @@
     <h1 style="font-size:55px">Fitness Empire</h1>
     </header>
 			<div class="navbar">
-				<a class="active" href="WebForm1.aspx"><i class="fa fa-home"></i></a> 
+				<a class="active" href="Fitness_Empire.aspx"><i class="fa fa-home"></i></a> 
 				<div id="myLinks">
 					  <div class="subnav">
 						<button class="subnavbtn">Member</button>
 							<div class="subnav-content">
 							 	<a href="Member.aspx">Add</a>
-							 	<a href="#"><i class="fa fa-fw fa-user"></i>Details</a>
-							  	<a href="#"><i class="fa fa-trash">Remove</i></a>
+							 	<a href="Dis_Member.aspx"><i class="fa fa-fw fa-user"></i>Details</a>
+							  	<a href="Del_Member.aspx"><i class="fa fa-trash">More</i></a>
 							</div>
 					  </div>
 					  <div class="subnav">
 						<button class="subnavbtn">Employee</button>
 							<div class="subnav-content">
 								<a href="Employee.aspx">Add</a>
-								<a href="#"><i class="fa fa-fw fa-user"></i>Details</a>
-								<a href="#"><i class="fa fa-trash"></i>Remove</a>
+								<a href="Dis_Employee.aspx"<i class="fa fa-fw fa-user"></i>Details</a>
+								<a href="Del_Employee.aspx"><i class="fa fa-trash"></i>More</a>
 							</div>
 					  </div> 
 					  <div class="subnav">
-						<button class="subnavbtn">Classes</button>
+						<button class="subnavbtn">Equipments</button>
 							<div class="subnav-content">
-								<a href="#">Add</a>
-								<a href="#">Details</a>
-								<a href="#"><i class="fa fa-trash"></i>Remove</a>
+								<a href="Equipment.aspx">Add</a>
+								<a href="Dis_Equipment.aspx">Details</a>
+								<a href="Del_Equipment.aspx"><i class="fa fa-trash"></i>More</a>
 							</div>
 					  </div>
-					  <a href="#contact">Contact</a>
-				
-					  <a href="Login_1.aspx"><i class="fa fa-fw fa-user"></i>Logout</a>
+
+					  <a href="Music.aspx">Music</a>
+
 				</div>	
 						<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+				<div style="float:right">
+							<a href="Login_1.aspx" ><i class="fa fa-fw fa-user"></i>Logout</a>
+						</div>
 			</div>
-
-        <div id="main">
-			<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">  
+	
+        <html>
+			<body>
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">  
 				
-				<p>
-					<br />
-				</p>
-				<p>
-				</p>
-				<p>
-				</p>
-				<p>
-				</p>
-				<p>
-				</p>
-				<p>
-				</p>
-				<p>
-				</p>
-				<p>
-				</p>
-				<p>
-				</p>
-				<p>
-				</p>
 				
-			</asp:ContentPlaceHolder>  
-        </div>
+				</asp:ContentPlaceHolder>
+			</body>
+        </html>
+			  
+       
 
-    <div id="footer">
+    <div id="footer" >
         @copyright Fitness Empire
     </div>
 

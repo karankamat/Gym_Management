@@ -4,7 +4,7 @@
 
 .bg-img {
     /* The image used */
-    background-image: url('../IMAGES/employeet.jpg');
+    background-image: url('../IMAGES/equipment.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,14 +20,14 @@
 
 .container {
     position: absolute;
-    left:0;
+    left: 0;
     margin: 20px;
     max-width: 300px;
     padding: 16px;
     background-color: white;
 }
 /* Full-width input fields */
-.input[type=text], .input[type=email], .input[type=number], .input[type=radio] {
+.input[type=text], .input[type=number] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -35,7 +35,7 @@
     background: #f1f1f1;
 }
 
-    .input[type=text]:focus, .input[type=email]:focus, .input[type=number]:focus .input[type=radio]:focus {
+    .input[type=text]:focus, .input[type=number]:focus {
         background-color: #ddd;
         outline: none;
     }
@@ -55,4 +55,3 @@
     .btn:hover {
         opacity: 1;
     }
-

@@ -68,19 +68,33 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="IMAGES\employeet.jpg" />
+    <Content Include="IMAGES\equipment.jpg" />
+    <Content Include="IMAGES\header.jpg" />
     <Content Include="IMAGES\Main.jpg" />
-    <Content Include="IMAGES\Member_page.jpg" />
+    <Content Include="IMAGES\member1.jpg" />
+    <Content Include="JavaScripts\Employee.js" />
     <Content Include="JavaScripts\Menu_Pop.js" />
     <Content Include="Login_1.aspx" />
     <Content Include="Style Sheets\Employee.css" />
+    <Content Include="Style Sheets\Equipment.css" />
+    <Content Include="Style Sheets\Fitness_Empire.css" />
     <Content Include="Style Sheets\login.css" />
     <Content Include="Style Sheets\Member.css" />
-    <Content Include="Style Sheets\transImage.css" />
-    <Content Include="Style Sheets\web1.css" />
+    <Content Include="Style Sheets\Master_Page.css" />
     <Content Include="Web.config" />
     <Content Include="Fitness_Empire.aspx" />
     <Content Include="Member.aspx" />
     <Content Include="Employee.aspx" />
+    <Content Include="Classes.aspx" />
+    <Content Include="Equipment.aspx" />
+    <Content Include="Dis_Member.aspx" />
+    <Content Include="Del_Member.aspx" />
+    <Content Include="Dis_Employee.aspx" />
+    <Content Include="Del_Employee.aspx" />
+    <Content Include="Dis_Equipment.aspx" />
+    <Content Include="Del_Equipment.aspx" />
+    <Content Include="Music.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -121,6 +135,69 @@
     </Compile>
     <Compile Include="Employee.aspx.designer.cs">
       <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.aspx.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes.aspx.designer.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment.aspx.cs">
+      <DependentUpon>Equipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment.aspx.designer.cs">
+      <DependentUpon>Equipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dis_Member.aspx.cs">
+      <DependentUpon>Dis_Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dis_Member.aspx.designer.cs">
+      <DependentUpon>Dis_Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Del_Member.aspx.cs">
+      <DependentUpon>Del_Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Del_Member.aspx.designer.cs">
+      <DependentUpon>Del_Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dis_Employee.aspx.cs">
+      <DependentUpon>Dis_Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dis_Employee.aspx.designer.cs">
+      <DependentUpon>Dis_Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Del_Employee.aspx.cs">
+      <DependentUpon>Del_Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Del_Employee.aspx.designer.cs">
+      <DependentUpon>Del_Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dis_Equipment.aspx.cs">
+      <DependentUpon>Dis_Equipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dis_Equipment.aspx.designer.cs">
+      <DependentUpon>Dis_Equipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Del_Equipment.aspx.cs">
+      <DependentUpon>Del_Equipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Del_Equipment.aspx.designer.cs">
+      <DependentUpon>Del_Equipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Music.aspx.cs">
+      <DependentUpon>Music.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Music.aspx.designer.cs">
+      <DependentUpon>Music.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

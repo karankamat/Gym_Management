@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace Demo_Project
 {
-    public partial class WebForm3 : System.Web.UI.Page
+    public partial class WebForm5 : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Sem_ProjectConnectionString1"].ConnectionString);
 
@@ -23,74 +23,40 @@ namespace Demo_Project
         public void Refress()
 
         {
-
             tb1.Text = "";
 
             tb2.Text = "";
 
             tb3.Text = "";
 
-            tb4.Text = "";
+            rbtnCardio.Checked = false;
 
-            rbtnFemale.Checked = false;
-
-            rbtnMale.Checked = true;
-
-            rbtnTrainer.Checked = false;
-
-            rbtnFloorManager.Checked = false;
-
-            rbtnCleaningStaff.Checked = false;
+            rbtnWeight.Checked = false;
 
         }
 
         protected void BtnSave_Click(object sender, EventArgs e)
 
         {
-            string Gender = "";
+            string Type = "";
 
-            if (rbtnFemale.Checked == true)
-
-            {
-
-                Gender = "Female";
-
-            }
-
-            if (rbtnMale.Checked == true)
+            if (rbtnCardio.Checked == true)
 
             {
 
-                Gender = "Male";
+                Type = "Cardio";
 
             }
 
-            string Designation = "";
-
-            if (rbtnTrainer.Checked == true)
+            if (rbtnWeight.Checked == true)
 
             {
 
-                Designation = "Trainer";
+                Type = "Weight";
 
             }
 
-            if (rbtnFloorManager.Checked == true)
-
-            {
-
-                Designation = "Floor Manager";
-
-            }
-            if (rbtnCleaningStaff.Checked == true)
-
-            {
-
-                Designation = "Cleaning Staff";
-
-            }
-
-            SqlCommand cmd = new SqlCommand("insert into Employee(FirstName,LastName,Email,Contact,Gender,Designation) values('" + tb1.Text + "','" + tb2.Text + "','" + tb3.Text + "','" + tb4.Text + "','" + Gender + "','" + Designation + "')", con)
+            SqlCommand cmd = new SqlCommand("insert into Equipment(EquipmentName,Quantity,Type,Weight) values('" + tb1.Text + "','" + tb2.Text + "','" + Type + "','" + tb3.Text + "')", con)
             {
                 CommandType = CommandType.Text
             };
@@ -129,6 +95,5 @@ namespace Demo_Project
             l1.Text = "";
 
         }
-
     }
 }

@@ -9,7 +9,7 @@
     <meta name="description" content="Login">
     <meta name="author" content="Karan_Kamat">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="Style Sheets/main.css" rel="stylesheet" />
+	<link href="Style Sheets/login.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         body {
